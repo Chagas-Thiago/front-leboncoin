@@ -35,6 +35,7 @@ const Login = ({ setUser }) => {
     <div>
       <form onSubmit={handLeSubmit}>
         <input
+          className="input"
           value={email}
           type="text"
           placeholder="email"
@@ -43,6 +44,7 @@ const Login = ({ setUser }) => {
           }}
         />
         <input
+          className="input"
           value={password}
           type="password"
           placeholder="password"
@@ -50,7 +52,9 @@ const Login = ({ setUser }) => {
             setPassword(event.target.value);
           }}
         />
-        <button type="submit">Se connecter </button>
+        <button className="connecter" type="submit">
+          Se connecter{" "}
+        </button>
       </form>
       <button
         onClick={() => {

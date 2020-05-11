@@ -89,7 +89,9 @@ const Signup = () => {
             setCheckbox(!checkbox);
           }}
         />
-        <button type="submit">Crée un compte</button>
+        <button className="compte" type="submit">
+          Crée un compte
+        </button>
       </form>
     </div>
   );
