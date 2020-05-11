@@ -34,3 +34,18 @@ Header {
 h1 {
   text-align: center;
 }
+.input {
+  border: 1px dotted #999;
+  border-radius: 0;
+  width: 400px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 30px;
+
+  -webkit-appearance: none;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

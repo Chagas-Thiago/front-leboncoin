@@ -45,6 +45,7 @@ const Signup = () => {
     <div>
       <form onSubmit={handLeSubmit}>
         <input
+          className="input"
           value={username}
           onChange={(event) => {
             setUserName(event.target.value);
@@ -53,6 +54,7 @@ const Signup = () => {
           placeholder="username"
         />
         <input
+          className="input"
           value={email}
           onChange={(event) => {
             setEmail(event.target.value);
@@ -61,6 +63,7 @@ const Signup = () => {
           placeholder="email"
         />
         <input
+          className="input"
           value={password}
           onChange={(event) => {
             setPassword(event.target.value);
@@ -69,6 +72,7 @@ const Signup = () => {
           placeholder="password"
         />
         <input
+          className="input"
           value={confirmPassword}
           onChange={(event) => {
             setConfirmPassword(event.target.value);
@@ -77,6 +81,7 @@ const Signup = () => {
           placeholder="confirm password"
         />
         <br />
+
         <span>Acceptez les CGC et CGU</span>
         <input
           type="checkbox"

@@ -6,7 +6,7 @@ import Offer from "./containers/Offer";
 import Login from "./containers/Login";
 import Header from "./componants/Header";
 import Signup from "./containers/Signup";
-import Publish from "./containers/Publish";
+
 import Cookies from "js-cookie";
 
 //Toute les states de connexion vont au App e footer pra evitar de mandar em todas as paginas
@@ -27,9 +27,7 @@ function App() {
         <Route path="/offer/:id">
           <Offer />
         </Route>
-        <Route path="/publish">
-          <Publish />
-        </Route>
+
         <Route path="/sign_up">
           <Signup />
         </Route>
