@@ -25,6 +25,7 @@ const Offers = () => {
     <span>Loading..xxxx></span>
   ) : (
     //td sera substraido usando offer por causa do map
+
     <div className="display">
       {data.offers.map((offer, index) => {
         return (
