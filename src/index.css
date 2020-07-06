@@ -1,4 +1,5 @@
 body {
+  margin: auto 0;
   background-color: #fafafa;
 }
 h2 {
@@ -17,8 +18,10 @@ form {
 
 /* ********Header************** */
 .containerHeader {
-  height: 100px;
-  background-color: white;
+  padding-top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
   /* margin-top: 20px; */
 }
 .logo {
@@ -54,17 +57,20 @@ form {
 }
 /* **********Offers********************** */
 .elipsis {
+  margin: 0 auto;
+  width: 100%;
   position: relative;
   z-index: -1;
 }
 .elipsis > div {
+  height: 290px;
+  /* height: 200px; */
+  position: absolute;
+  top: -140px;
+  left: -100px;
+  right: -100px;
   border-radius: 50%;
-  height: 200px;
-  top: -100px;
-  width: 100%;
-  background-color: #ff6e14;
-
-  position: relative;
+  background-color: #f56b2a;
 }
 .imgOffer {
   padding: 5px;
@@ -77,6 +83,7 @@ form {
   border-style: ridge;
 }
 .display {
+  margin-top: 300px;
   display: flex;
   justify-content: space-around;
   object-fit: cover;
