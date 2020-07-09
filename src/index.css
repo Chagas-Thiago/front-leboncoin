@@ -1,12 +1,18 @@
 body {
   margin: auto 0;
-  background-color: #fafafa;
+  background-color: #eff2f4;
 }
 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #1a1a1a;
+  overflow: hidden;
 }
-
+h3 {
+  margin-top: -16px;
+  color: #ff6e14;
+}
 h1 {
   text-align: center;
 }
@@ -56,6 +62,23 @@ form {
   margin-left: 29px;
 }
 /* **********Offers********************** */
+.descOffers {
+  padding-left: 20px;
+  background-color: white;
+}
+.linkOffers {
+  text-decoration: none;
+}
+.ficheOffers {
+  border-radius: 5px;
+  width: 800px;
+  height: 180px;
+  background-color: white;
+  /* padding-right: 10px; */
+  margin-left: 260px;
+  margin-bottom: 10px;
+  display: flex;
+}
 .elipsis {
   margin: 0 auto;
   width: 100%;
@@ -73,19 +96,16 @@ form {
   background-color: #f56b2a;
 }
 .imgOffer {
-  padding: 5px;
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-
-  border-style: ridge;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #cad1d9;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
 }
 .display {
-  margin-top: 300px;
-  display: flex;
-  justify-content: space-around;
+  margin-top: 200px;
+  /* display: flex; */
+  /* justify-content: space-around; */
   object-fit: cover;
 }
 
@@ -107,7 +127,7 @@ form {
   margin-top: 10px;
   padding: 10px;
 }
-/* .test {
+/* .test3 {
   width: 100px;
   height: 100px;
   background-color: white;

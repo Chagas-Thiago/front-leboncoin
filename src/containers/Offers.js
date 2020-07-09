@@ -33,17 +33,24 @@ const Offers = () => {
         {data.offers.map((offer, index) => {
           return (
             //recuperar o id pra usar no Offer com a funcao Params
-            <Link key={offer._id} to={`/offer/${offer._id}`}>
+            <Link
+              className="linkOffers"
+              key={offer._id}
+              to={`/offer/${offer._id}`}
+            >
               <div>
-                <span>
-                  <img
-                    className="imgOffer"
-                    alt=""
-                    src={offer.picture.secure_url}
-                  />
-                  <h2>{offer.title}</h2>
-                  <p>{offer.description}</p>
-                  <span>{offer.price} euros</span>
+                <span className="ficheOffers">
+                  <span>
+                    <img
+                      className="imgOffer"
+                      alt=""
+                      src={offer.picture.secure_url}
+                    />
+                  </span>
+                  <span className="descOffers">
+                    <h2>{offer.title}</h2>
+                    <h3>{offer.price} €</h3>
+                  </span>
                 </span>
               </div>
             </Link>
