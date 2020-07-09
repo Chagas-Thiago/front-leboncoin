@@ -22,7 +22,7 @@ const Offer = () => {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   //Faire une requete avec cette id
   //pour recuperer les données d'un annonce en particulier

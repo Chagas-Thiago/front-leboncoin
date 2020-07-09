@@ -21,7 +21,7 @@ function App() {
   const tokenFromCookie = Cookies.get("userToken");
   //verificar si o token ja esta ligado ao cookie sinao sera null
   const [user, setUser] = useState(tokenFromCookie || null);
-  const [username, setUsername] = useState(Cookies.get("username") || "");
+  const username = useState(Cookies.get("username") || "");
   //history qui sur les composent enant de Router
   return (
     <Router>
