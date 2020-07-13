@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import moment from "moment/moment";
 
+require("moment/locale/fr");
+moment.locale();
 //Recuperar a lista de anuncios fazendo uma requete vers le serveur usando axios.
 //Mapeando os anuncios com .map para substrair td o conteudo.
 
@@ -29,6 +32,10 @@ const Offers = () => {
       <div className="elipsis">
         <div></div>
       </div>
+      <div className="recherche">
+        <input placeholder="Cherche ton bonneur ici"></input>
+        <button></button>
+      </div>
       <div className="display">
         {data.offers.map((offer, index) => {
           return (
@@ -47,10 +54,17 @@ const Offers = () => {
                       src={offer.picture.secure_url}
                     />
                   </span>
-                  <span className="descOffers">
-                    <h2>{offer.title}</h2>
-                    <h3>{offer.price} €</h3>
-                  </span>
+                  <div className="descOffers">
+                    <span className="descOffers2">
+                      <p>{offer.title}</p>
+                      <p>{offer.price} €</p>
+                    </span>
+                    <span>
+                      <p className="date">
+                        {moment(offer.created, "YYYYMMDD").fromNow()}
+                      </p>
+                    </span>
+                  </div>
                 </span>
               </div>
             </Link>

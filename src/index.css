@@ -1,22 +1,16 @@
 body {
   margin: auto 0;
-  /* background-color: #eff2f4; */
-  background-color: #0d9eff;
+  background-color: #eff2f4;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #1a1a1a;
-  overflow: hidden;
+p {
+  color: rgb(34, 34, 34);
 }
-h3 {
-  margin-top: -16px;
-  color: #ff6e14;
-}
-h1 {
-  text-align: center;
-}
+
 form {
   align-items: center;
   display: flex;
@@ -39,7 +33,7 @@ form {
   /* object-fit: cover; */
 }
 .linkHeader {
-  font-weight: 700px;
+  /* font-weight: 700px; */
   border-radius: 5px;
   margin-left: 29px;
   text-decoration: none;
@@ -63,9 +57,22 @@ form {
   margin-left: 29px;
 }
 /* **********Offers********************** */
+.date {
+  margin-top: 70px;
+}
 .descOffers {
   padding-left: 20px;
   background-color: white;
+}
+
+.descOffers2 > :first-child {
+  font-size: 26px;
+  background-color: white;
+}
+.descOffers2 > :last-child {
+  font-size: 20px;
+  color: #ff6e14;
+  margin-top: -20px;
 }
 .linkOffers {
   text-decoration: none;
@@ -128,8 +135,25 @@ form {
   margin-top: 10px;
   padding: 10px;
 }
-/* .test3 {
-  width: 100px;
+.recherche {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 400px;
+  width: 600px;
   height: 100px;
   background-color: white;
-} */
+}
+.recherche > input {
+  width: 270px;
+  height: 50px;
+  background-color: rgb(228, 227, 227);
+}
+.recherche > button {
+  width: 270px;
+  height: 56px;
+  background-color: rgb(228, 227, 227);
+  border: none;
+}
