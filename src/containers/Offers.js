@@ -33,8 +33,8 @@ const Offers = () => {
         <div></div>
       </div>
       <div className="recherche">
-        <input placeholder="Cherche ton bonneur ici"></input>
-        <button></button>
+        <input type="text" placeholder="Cherche ton bonneur ici"></input>
+        <input type="submit" value="Recherche"></input>
       </div>
       <div className="display">
         {data.offers.map((offer, index) => {

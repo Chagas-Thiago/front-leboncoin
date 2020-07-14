@@ -13,11 +13,11 @@ const Header = ({ user, setUser }) => {
         Déposer une annonce
       </Link>
       <button className="rechercheHeader">
-        <img alt="" src={Icon} />
+        <img className="icon" alt="" src={Icon} />
         Recherche
       </button>
       {user ? (
-        <button
+        <Link
           className="buttonHeader"
           onClick={() => {
             //suprimer les cookies quando si deconnectar
@@ -27,9 +27,11 @@ const Header = ({ user, setUser }) => {
           }}
         >
           Se deconnecter
-        </button>
+        </Link>
       ) : (
-        <Link to="/log_in">Se connecter</Link>
+        <Link className="buttonHeader" to="/log_in">
+          Se connecter
+        </Link>
       )}
     </div>
   );
