@@ -3,6 +3,7 @@ import Cookies from "js-cookie";
 import { useHistory, Link } from "react-router-dom";
 import Logo from "../assets/leboncoin.png";
 import Icon from "../assets/search (1).svg";
+import Icon2 from "../assets/heart-key.svg";
 const Header = ({ user, setUser }) => {
   //history para direcionar a pagina principal
   const history = useHistory();
@@ -12,10 +13,10 @@ const Header = ({ user, setUser }) => {
       <Link className="linkHeader" to="/publish">
         Déposer une annonce
       </Link>
-      <button className="rechercheHeader">
+      <Link className="rechercheHeader" to="/">
         <img className="icon" alt="" src={Icon} />
         Recherche
-      </button>
+      </Link>
       {user ? (
         <Link
           className="buttonHeader"
@@ -26,6 +27,7 @@ const Header = ({ user, setUser }) => {
             history.push("/");
           }}
         >
+          <img className="icon2" alt="" src={Icon2} />
           Se deconnecter
         </Link>
       ) : (

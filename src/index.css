@@ -17,7 +17,10 @@ form {
 }
 
 /* ********Header***************/
-
+.icon2 {
+  height: 26px;
+  margin-right: 10px;
+}
 .containerHeader {
   padding-top: 10px;
   width: 100%;
@@ -51,6 +54,7 @@ form {
   margin-left: 229px;
 }
 .rechercheHeader {
+  color: black;
   font-size: 20px;
   background-color: white;
   border-style: none;
@@ -140,7 +144,7 @@ form {
   padding: 10px;
 }
 
-/* ********RECHERCHE************** */
+/*********RECHERCHE************** */
 
 .recherche {
   display: flex;
