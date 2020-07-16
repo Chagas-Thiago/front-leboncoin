@@ -1,3 +1,5 @@
+![photo](https://github.com/Chagas-Thiago/front-leboncoin/blob/master/Capture%20d%E2%80%99%C3%A9cran%20(107).png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
