@@ -49,7 +49,7 @@ const Offers = () => {
                 <span className="ficheOffers">
                   <span>
                     <img
-                      className="imgOffer"
+                      className="imgOffers"
                       alt=""
                       src={offer.picture.secure_url}
                     />

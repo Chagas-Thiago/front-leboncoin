@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
+import moment from "moment/moment";
+
+require("moment/locale/fr");
+moment.locale();
 
 const Offer = () => {
   //Recuperer les params envoyé depuis le Link de Offers
@@ -30,12 +34,20 @@ const Offer = () => {
     <span>Loading...</span>
   ) : (
     <>
-      <div>
+      <div className="containerOffer">
         <img className="imgOffer" alt="" src={data.picture.secure_url} />
-        <span>{data.title}</span>
-        <span>{data.description}</span>
-        <span>{data.price}</span>
+        <span className="offer">
+          <p>{data.title}</p>
+          <p>{data.price} €</p>
+        </span>
+        <span>
+          <p className="dateOffer">
+            {moment(data.created, "YYYYMMDD").fromNow()}
+          </p>
+        </span>
+        <p>{data.description}</p>
       </div>
+
       <button
         onClick={() =>
           history.push("/payment", {
@@ -52,3 +64,4 @@ const Offer = () => {
   );
 };
 export default Offer;
+// nnnnnn,;nxnnnnnn;:c, ,c c,:;c;,:;:

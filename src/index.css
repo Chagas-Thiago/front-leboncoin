@@ -1,7 +1,8 @@
 body {
   margin: auto 0;
-  background-color: #eff2f4;
-  font-weight: 300;
+  /* background-color: #eff2f4; */
+  background-color: #fafafa;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", sans-serif;
@@ -113,7 +114,7 @@ form {
   border-radius: 50%;
   background-color: #f56b2a;
 }
-.imgOffer {
+.imgOffers {
   border-radius: 5px 0px 0px 5px;
   background-color: #cad1d9;
   width: 180px;
@@ -171,4 +172,32 @@ form {
   height: 34px;
   background-color: #4183d7;
   border: none;
+}
+/**********OFFER**********************/
+.offer > :first-child {
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.offer > :last-child {
+  margin-left: 20px;
+  color: #f56b2a;
+  font-weight: 700;
+}
+.imgOffer {
+  border-radius: 2px;
+  width: 600px;
+  height: 350px;
+  /* object-fit: contain; */
+}
+.containerOffer {
+  height: 540px;
+  width: 600px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 380px;
+}
+.dateOffer {
+  margin-top: 50px;
+  margin-left: 20px;
 }
