@@ -33,7 +33,7 @@ const Offer = () => {
   return isLoading ? (
     <span>Loading...</span>
   ) : (
-    <>
+    <div className="container">
       <div className="containerOffer">
         <img className="imgOffer" alt="" src={data.picture.secure_url} />
         <span className="offer">
@@ -45,22 +45,28 @@ const Offer = () => {
             {moment(data.created, "YYYYMMDD").fromNow()}
           </p>
         </span>
-        <p>{data.description}</p>
+        <span className="descriptionOffer">
+          <p>Description</p>
+          <p>{data.description}</p>
+        </span>
       </div>
-
-      <button
-        onClick={() =>
-          history.push("/payment", {
-            productId: data._id,
-            img: data.picture.secure_url,
-            title: data.title,
-            price: data.price,
-          })
-        }
-      >
-        Acheter
-      </button>
-    </>
+      <div className="acheter">
+        <p>{data.creator.account.username}</p>
+        <button
+          className="buttonOffer"
+          onClick={() =>
+            history.push("/payment", {
+              productId: data._id,
+              img: data.picture.secure_url,
+              title: data.title,
+              price: data.price,
+            })
+          }
+        >
+          Acheter
+        </button>
+      </div>
+    </div>
   );
 };
 export default Offer;

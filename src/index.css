@@ -181,6 +181,7 @@ form {
 }
 .offer > :last-child {
   margin-left: 20px;
+  font-size: 18px;
   color: #f56b2a;
   font-weight: 700;
 }
@@ -191,13 +192,51 @@ form {
   /* object-fit: contain; */
 }
 .containerOffer {
+  box-shadow: 1px 1px 1px 1px #aaa;
   height: 540px;
   width: 600px;
   background-color: white;
-  margin-top: 10px;
-  margin-left: 380px;
+  align-content: center;
+  margin-top: 20px;
+  margin-left: 240px;
 }
 .dateOffer {
   margin-top: 50px;
   margin-left: 20px;
+}
+.descriptionOffer > :first-child {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.descriptionOffer > :last-child {
+  padding-bottom: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.buttonOffer {
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 60px;
+  width: 220px;
+  color: white;
+  background-color: #ff6e14;
+}
+.container {
+  display: flex;
+}
+.acheter {
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  height: 200px;
+  width: 320px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 1px 1px #aaa;
 }
