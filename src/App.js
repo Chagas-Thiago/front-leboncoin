@@ -12,7 +12,7 @@ import Header from "./componants/Header";
 import Signup from "./containers/Signup";
 import Publish from "./containers/Publish";
 import Payment from "./containers/Payment";
-
+import Footer from "./componants/Footer";
 import Cookies from "js-cookie";
 
 //Toute les states de connexion vont au App e footer pra evitar de mandar em todas as paginas
@@ -47,6 +47,7 @@ function App() {
           <Offers />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

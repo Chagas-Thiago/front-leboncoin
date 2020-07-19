@@ -44,10 +44,10 @@ const Offer = () => {
           <p className="dateOffer">
             {moment(data.created, "YYYYMMDD").fromNow()}
           </p>
-        </span>
-        <span className="descriptionOffer">
-          <p>Description</p>
-          <p>{data.description}</p>
+          <span className="descriptionOffer">
+            <p>Description</p>
+            <p>{data.description}</p>
+          </span>
         </span>
       </div>
       <div className="acheter">
